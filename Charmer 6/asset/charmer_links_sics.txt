@@ -1,0 +1,104 @@
+database - 
+http://sicsglobal.com/phpmyadmin/index.php?db=app_charmer
+
+**********************************************
+
+1) Login - 
+
+http://sicsglobal.com/projects/App_projects/Charmer/customerlogin.php/user/login
+
+email
+password
+devicetoken
+
+*************************************************
+
+2) Registration - 
+
+http://sicsglobal.com/projects/App_projects/Charmer/signup.php/user/register
+
+firstName
+lastName
+gender
+pass
+age
+email
+devicetoken
+picture
+
+********************************************************
+
+3) Logout - 
+
+http://sicsglobal.com/projects/App_projects/Charmer/logout.php/user/logout
+
+userID
+oauth_token
+
+****************************************************************
+
+4) View User - 
+
+http://sicsglobal.com/projects/App_projects/Charmer/viewUser.php/user/view/
+
+userID
+oauth_token
+
+
+*********************************************************************
+
+5) Profile Picture - 
+
+http://sicsglobal.com/projects/App_projects/Charmer/profPic.php/user/profPic/
+
+userID
+oauth_token
+picture
+
+*****************************************************
+
+6) FB/Twitter/Instagram Login
+
+http://sicsglobal.com/projects/App_projects/Charmer/fb_login.php/user/fbLogin/
+
+loginID 
+type [keywords - fb,twitter,instagram]
+userName
+email
+devicetoken
+
+
+
+**********************************************************
+
+7) Post Charms
+
+http://sicsglobal.com/projects/App_projects/Charmer/addCharm.php/user/postCharm
+
+userID
+oauth_token
+charms
+uName
+
+
+*****************************************************
+
+8) Self Description
+
+http://sicsglobal.com/projects/App_projects/Charmer/selfDescription.php/user/selfdscptn/
+
+userID
+oauth_token
+desOne
+desTwo
+desThree
+
+***************************************************************
+
+9)  View all feeds
+
+http://sicsglobal.com/projects/App_projects/Charmer/view_all_feeds.php/user/allfeeds/
+
+userID
+oauth_token
+nextIndex

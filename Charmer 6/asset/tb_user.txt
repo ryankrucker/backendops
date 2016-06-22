@@ -1,0 +1,84 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 11, 2015 at 05:55 AM
+-- Server version: 5.5.33
+-- PHP Version: 5.4.31
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `app_charmer`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_user`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_user` (
+  `userID` int(12) NOT NULL AUTO_INCREMENT,
+  `fbID` text NOT NULL,
+  `twitter_ID` text NOT NULL,
+  `instagram_ID` text NOT NULL,
+  `fname` text NOT NULL,
+  `lname` text NOT NULL,
+  `age` int(11) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `email` text NOT NULL,
+  `password` text NOT NULL,
+  `profilePic` text NOT NULL,
+  `devicetoken` text NOT NULL,
+  `login_status` text NOT NULL,
+  `login_time` datetime NOT NULL,
+  `logout_time` datetime NOT NULL,
+  `oauth_token` text NOT NULL,
+  PRIMARY KEY (`userID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=78 ;
+
+--
+-- Dumping data for table `tb_user`
+--
+
+INSERT INTO `tb_user` (`userID`, `fbID`, `twitter_ID`, `instagram_ID`, `fname`, `lname`, `age`, `gender`, `email`, `password`, `profilePic`, `devicetoken`, `login_status`, `login_time`, `logout_time`, `oauth_token`) VALUES
+(3, '', '', '', 'meenu', 's', 27, 'F', 'meenu@gmail.com', 'meenu', 'http://sicsglobal.com/projects/App_projects/Charmer/profilePic/girl.png', 'asgdefrt', 'true', '2015-12-07 05:26:48', '2015-12-02 05:24:20', '36c9e2a423615a0c060e254f3cc5797ea56ef7d6'),
+(4, '', '', '', 'divaniii', 'sharma', 22, 'F', 'divaniiifgfghfhh@gmail.com', 'diva', '', '', 'false', '2015-11-20 09:34:34', '2015-11-20 09:34:52', ''),
+(9, '', '', '', 'disha', 'sharma', 22, 'F', 'disha@gmail.com', 'disha', '', '', 'false', '2015-11-30 08:23:35', '2015-11-30 09:17:43', ''),
+(10, '', '', '', 'Anju', 'Anju', 0, 'Female', 'Anju', 'Anju', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(11, '', '', '', 'Anjus', 'Anjus', 0, 'Anjus', 'Anjus', 'Anjus', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(12, '', '', '', 'Jafar', 'Khan', 24, 'Male', 'jafar@gmail.com', '12', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(14, '', '', '', 'disha', 'sharma', 22, 'F', 'dish1a@gmail.com', 'disha', '', 'dsgfgd', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(17, '', '', '', 'disha', 'sharma', 22, 'F', 'discchccdsgfgd1a@gmail.com', 'disha', '', 'dfhgfhfghgh', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(19, '', '', '', 'manu', 'M', 23, 'Male', 'manu@gmail.com', '1234', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(21, '', '', '', 'Manu', 'V', 21, 'Male', 'vanu@gmail.com', '12', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(23, '', '', '', 'Manu', 'V', 21, 'Male', 'manuj@gmail.com', '12', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(24, '', '', '', 'Benz', 'B', 23, 'Male', 'benz@gmail.com', '12', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(25, '', '', '', 'Rana', 'ra', 23, 'Male', 'ran@gmail.com', '12', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(33, '', '', '', 'Albin', 'al', 25, 'Male', 'albin@gmail.com', '12', '', '', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(34, '', '', '', 'nilesh', 'darsan', 4, 'M', 'nilesh@gmail.com', 'nilesh', '', 'dsgfgd', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
+(47, '', '', '', 'raga', 'nair', 28, 'female', 'raga@gmail.com', 'raga', '', '', 'false', '2015-11-30 10:02:18', '2015-12-02 05:40:07', ''),
+(48, '', '', '', 'rema', 'nair', 28, 'female', 'rema@gmail.com', 'rema', '', 'asdqwfgh', 'true', '2015-11-30 10:06:26', '0000-00-00 00:00:00', '3eeee2e137a0c45470afeb5fba18cb5141ec52e8'),
+(50, '', '', '', 'aa', 'av', 12, 'Male', 'wan@gmail.com', '12', '', '', 'true', '2015-11-30 11:01:21', '0000-00-00 00:00:00', '612a26e503d747937de79a0dbe555308f84cdca9'),
+(51, '', '', '', 'qw', 'qw', 12, 'Male', 'qw@gmail.com', '12', 'http://sicsglobal.com/projects/App_projects/Charmer/profilePic/FarmVille.png', '', 'true', '2015-12-10 08:04:53', '0000-00-00 00:00:00', 'dbde5b81ec18686055be2738555c060c267e20cc'),
+(52, '', '', '', 'rema', 'nair', 28, 'female', 'remaqq@gmail.com', 'rema', '', '', 'false', '2015-11-30 11:07:09', '2015-11-30 11:41:27', ''),
+(53, '', '', '', 'sita', 'nair', 28, 'female', 'sita@gmail.com', 'sita', 'http://sicsglobal.com/projects/App_projects/Charmer/profilePic/1490234784Lime.jpg', 'qwrrgjkhjhjhjff', 'true', '2015-12-03 10:56:29', '0000-00-00 00:00:00', '630fc7dffd7aff3db0458ff2b1a493cae33cfcf9'),
+(54, '', '', '', 'Asha', 'nair', 28, 'female', 'asha@gmail.com', 'asha', 'http://sicsglobal.com/projects/App_projects/Charmer/profilePic/surf.jpg', 'asdqwfgh', 'true', '2015-12-02 05:25:16', '0000-00-00 00:00:00', 'd0ce2f1e3acffc5a3573b42918be27756fafd2e6'),
+(55, '', '', '', 'qwerty', 'qw', 21, 'male', 'vaa@gmail.com', 'vaa', 'http://sicsglobal.com/projects/App_projects/Charmer/profilePic/images_20(4).jpg', '5136513', 'true', '2015-12-03 13:37:47', '0000-00-00 00:00:00', '6e42eab4bcd3ab10ed01013198e4b6a6397b0b81'),
+(59, '', '', '', 'Gayathri', 'nair', 28, 'female', 'gayu@gmail.com', 'gayu', '', 'asdqwfgh', 'true', '2015-12-04 12:18:04', '0000-00-00 00:00:00', '1e71d02e3dec56d14ee9c5c81b68a6bb0bc312ae'),
+(62, '', '', '', 'rf', 'rf', 12, 'Male', 'rf@gmail.com', 'rf', '', 'f5454545', 'true', '2015-12-04 14:14:30', '0000-00-00 00:00:00', '75282fc510393f282832e7b30178879607c01659'),
+(63, '', '', '', 'were', 'were', 12, 'Male', 'were@gmail.com', 'qw', '', 'f5454545', 'true', '2015-12-04 14:15:46', '0000-00-00 00:00:00', 'd9245c5cbccc7d2a89d10a5d10e1ae2438ff8cb7'),
+(64, '', '', '', 'io', 'io', 12, 'Female', 'io@gmail.com', 'qw', '', 'f5454545', 'true', '2015-12-04 14:20:36', '0000-00-00 00:00:00', '6d31d9a8328c66a77c0070986c40eb0cb65095d5'),
+(65, '', '', '', 'tt', 'ty', 12, 'Female', 'tyv@gmail.com', 'qw', '', 'f5454545', 'true', '2015-12-04 14:22:54', '0000-00-00 00:00:00', 'c6666660a1458a3c47c254906089020e554857fe'),
+(66, '', '', '', 'df', 'df', 12, 'Male', 'sd@gmail.com', 'qw', '', 'f5454545', 'true', '2015-12-04 14:25:16', '0000-00-00 00:00:00', '6cd525ea5cc282ff425204794d5ab5ee7d922f6e'),
+(67, '', '', '', 'lk', 'lk', 12, 'Male', 'lk@gmail.com', 'qw', '', 'f5454545', 'true', '2015-12-04 14:31:25', '0000-00-00 00:00:00', '64856704cf39494be7abf10ad1a0b366b5ef7cfc'),
+(70, '', '', '', 'veni', 'nair', 28, 'female', 'veni@gmail.com', 'veni', 'http://sicsglobal.com/projects/App_projects/Charmer/profilePic/girl2.jpg', 'asdgxs', 'true', '2015-12-05 09:41:47', '0000-00-00 00:00:00', 'd2c8bb3b75c7c1ec749d04540c1516028f8a32b2'),
+(71, '', '', '', 'vi', 'vi', 12, 'Male', 'vi@gmail.com', '12', '', 'f5454545', 'true', '2015-12-07 17:35:00', '0000-00-00 00:00:00', '456ddd8490bdcadd30d16edf2ee6f8a68ada8d42'),
+(72, '', '', '', 'tt', 'ty', 12, 'Male', 'rty@gmail.com', 'qw', '', 'f5454545', 'true', '2015-12-09 07:40:35', '0000-00-00 00:00:00', 'ea1c08975ea2dab3a9e76af5f7959ccab87fc724'),
+(73, '', '', '', 'Ryan', 'Rucker', 23, 'Male', 'ryankrucker@gmail.com', 'rucker10', '', '', 'true', '2015-12-10 21:54:13', '0000-00-00 00:00:00', 'f2e3d0dc562764e717d3848719385cedf9a2dc0c'),
+(74, '', '', '', 'Chutiya', 'Person', 24, 'Female', 'g@hmb.com', 'hmhmhm', '', 'f5454545', 'true', '2015-12-11 04:18:47', '0000-00-00 00:00:00', 'bbf6b97ffcf1124a04ad1e7413d1abe61cef6953'),
+(75, 'FBeryuikjnj29837', '', '', 'Malu', '', 0, '', 'malu@gmail.com', '', '', 'adjiuh49', 'true', '2015-12-11 05:42:37', '0000-00-00 00:00:00', '3db5b7abb9b104ac0d3cd5df61fa45141fdb3b37'),
+(76, '', 'TWITTERyuikjnj29837', '', 'Malutty', '', 0, '', 'malutty@gmail.com', '', '', 'adjiuh49', 'true', '2015-12-11 05:46:06', '0000-00-00 00:00:00', 'd144a3162224a2abf0613e5ae379ccddb9697a5f'),
+(77, '', '', 'INSTAyuikjnj29837', 'molu', '', 0, '', 'molutty@gmail.com', '', '', 'adjiuh49', 'true', '2015-12-11 05:46:56', '0000-00-00 00:00:00', '0868b548010b694f1379f07fbde69cb4a4966a49');

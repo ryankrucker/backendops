@@ -1,0 +1,44 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 23, 2015 at 06:13 AM
+-- Server version: 5.5.33
+-- PHP Version: 5.4.31
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `app_charmer`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_feed`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_feed` (
+  `feedID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` text NOT NULL,
+  `desOne` text NOT NULL,
+  `desTwo` text NOT NULL,
+  `desThree` text NOT NULL,
+  `feed_date` datetime NOT NULL,
+  `like_count` int(11) NOT NULL,
+  `comment_count` int(11) NOT NULL,
+  PRIMARY KEY (`feedID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=64 ;
+
+--
+-- Dumping data for table `tb_feed`
+--
+
+INSERT INTO `tb_feed` (`feedID`, `userID`, `desOne`, `desTwo`, `desThree`, `feed_date`, `like_count`, `comment_count`) VALUES
+(57, '70', 'cool', 'guru', 'cool', '2015-12-22 17:23:48', 0, 0),
+(58, '71', 'qw', 'ert', 'yj', '2015-12-22 17:25:11', 0, 0),
+(59, '71', 'hi', 'hello', 'good', '2015-12-22 17:26:07', 0, 0),
+(61, '70', 'hi', 'hello', 'Good Morning', '2015-12-23 09:37:46', 0, 0),
+(62, '70', 'hi', 'hello', 'Good Morning', '2015-12-23 09:39:02', 0, 0),
+(63, '70', 'very', 'good', 'excellent', '2015-12-23 10:04:46', 0, 0);

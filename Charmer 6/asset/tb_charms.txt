@@ -1,0 +1,51 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.11.3
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Dec 23, 2015 at 06:11 AM
+-- Server version: 5.5.33
+-- PHP Version: 5.4.31
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `app_charmer`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_charms`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_charms` (
+  `charmID` int(11) NOT NULL AUTO_INCREMENT,
+  `feedID` text NOT NULL,
+  `userID` text NOT NULL,
+  `desOne` text NOT NULL,
+  `desTwo` text NOT NULL,
+  `desThree` text NOT NULL,
+  `describe_uName` text NOT NULL,
+  `charm_post_date` datetime NOT NULL,
+  `liked_status` int(3) NOT NULL,
+  PRIMARY KEY (`charmID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=106 ;
+
+--
+-- Dumping data for table `tb_charms`
+--
+
+INSERT INTO `tb_charms` (`charmID`, `feedID`, `userID`, `desOne`, `desTwo`, `desThree`, `describe_uName`, `charm_post_date`, `liked_status`) VALUES
+(94, '57', '70', 'cool', 'guru', 'cool', '53', '2015-12-22 17:23:48', 0),
+(95, '57', '70', 'cool', 'guru', 'cool', '54', '2015-12-22 17:23:48', 0),
+(96, '61', '70', 'hi', 'hello', 'Good Morning', '108', '2015-12-23 09:37:46', 0),
+(97, '61', '70', 'hi', 'hello', 'Good Morning', '109', '2015-12-23 09:37:46', 0),
+(98, '61', '70', 'hi', 'hello', 'Good Morning', '110', '2015-12-23 09:37:46', 0),
+(99, '61', '70', 'hi', 'hello', 'Good Morning', '111', '2015-12-23 09:37:46', 0),
+(100, '61', '70', 'hi', 'hello', 'Good Morning', '75', '2015-12-23 09:37:46', 0),
+(101, '61', '70', 'hi', 'hello', 'Good Morning', '76', '2015-12-23 09:37:46', 0),
+(102, '61', '70', 'hi', 'hello', 'Good Morning', '77', '2015-12-23 09:37:46', 0),
+(103, '62', '70', 'hi', 'hello', 'Good Morning', '104', '2015-12-23 09:39:02', 0),
+(104, '62', '70', 'hi', 'hello', 'Good Morning', '105', '2015-12-23 09:39:02', 0),
+(105, '63', '70', 'very', 'good', 'excellent', '', '2015-12-23 10:04:46', 0);
