@@ -1,4 +1,4 @@
-#This is the Server Side files for Charmer
+#Charmer - Server Side
 
 Written Dec. 2015
-Ryan Rucker
+Ryan Rucker w/ Help
